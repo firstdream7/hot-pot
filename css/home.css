@@ -1,0 +1,485 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  /* font-family: "Lato", sans-serif; */
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Noto Sans", sans-serif;
+  color: #ffffff;
+}
+
+/* 主图页 */
+.header {
+  height: 100%vh;
+  background-image: linear-gradient(
+      to top left,
+      rgba(220, 109, 109, 0.2),
+      rgba(44, 31, 31, 0.7)
+    ),
+    url(../img/background-img/background-03.jpg);
+  background-size: cover;
+}
+
+.hero {
+  padding: 18rem 5.2rem;
+}
+
+.hero-grid {
+  align-items: center;
+  justify-content: center;
+  grid-template-columns: 1fr 2fr;
+  gap: 8rem;
+}
+
+.hero-text {
+  font-size: 2rem;
+  line-height: 1.8;
+  margin-top: 2.4rem;
+}
+
+/* 注册表 */
+
+.cta-form {
+  font-size: 1.7rem;
+  font-weight: 600;
+  flex-direction: column;
+  gap: 2.4rem;
+  padding: 1.8rem 3.2rem;
+}
+
+.cta-form *:focus {
+  outline: none;
+  box-shadow: 0 0 0 0.8rem rgba(227, 70, 70, 0.341);
+}
+
+.cta-registry {
+  background-color: rgba(0, 0, 0, 0.205);
+  border-radius: 1rem;
+}
+
+.cta-form input,
+.cta-form select {
+  margin-top: 0.5rem;
+  background-color: #f1f3f5;
+}
+
+.cta-form input,
+.cta-form select,
+.cta-form button {
+  width: 100%;
+  padding: 1rem;
+  border: 0;
+  border-radius: 0.5rem;
+}
+
+.btn-form {
+  color: #ffffff;
+  background-color: #e03131;
+  transition: all 0.3s;
+}
+
+.btn-form:hover,
+.btn-form:active {
+  transform: translate(0, -0.5rem);
+  background-color: #fff;
+  color: #e03131;
+  cursor: pointer;
+}
+
+/* 导航栏 */
+.main-nav {
+  background-color: #e03131;
+  padding: 1.2rem;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.main-nav-list {
+  font-size: 2.2rem;
+  font-weight: 600;
+  list-style: none;
+}
+
+.main-nav-link {
+  display: block;
+  text-decoration: none;
+  padding: 1.2rem;
+  transition: all 0.4s;
+}
+
+.main-nav-link:link,
+.main-nav-link:visited {
+  border-radius: 2rem;
+  color: #fff;
+}
+
+.main-nav-link:hover,
+.main-nav-link:active {
+  transform: translate(0, -0.2rem);
+  background-color: #fff;
+  color: #e03131;
+}
+
+.main-img {
+  height: 9.6rem;
+}
+
+/*  导航按钮 */
+.btn-moblie-nav {
+  border: none;
+  background: none;
+  cursor: pointer;
+
+  display: none;
+}
+
+.icon-moblie-nav {
+  font-size: 5rem;
+}
+
+.icon-moblie-nav[name="menu-outline"] {
+  border: 2px solid #fff;
+  color: #fff;
+}
+
+.icon-moblie-nav[name="clouse-outline"] {
+  border: 1px solid #000;
+  color: #111122;
+  display: none;
+}
+
+/* 食材丰富 */
+.ingredient {
+  background-color: #e03131;
+  border-radius: 4rem;
+  overflow: hidden;
+  padding: 3.2rem;
+}
+
+.ingredient-box {
+  align-items: center;
+  justify-content: center;
+}
+
+.ingredient-img {
+  height: 32rem;
+}
+
+.ingredient-text {
+  font-size: 2.4rem;
+}
+
+/* 配料 */
+.flavour-img {
+  height: 30rem;
+  /* border: 1rem solid #e03131; */
+  border-radius: 20px;
+}
+
+.flavour-img-Xleft {
+  transform: translate(10px, 0);
+  transition: all 0.5s;
+}
+
+.flavour-img-Xleft:hover {
+  transform: translate(15px, -5px);
+}
+
+.flavour-img-Xright {
+  transform: translate(-10px, 0);
+  transition: all 0.5s;
+}
+
+.flavour-img-Xright:hover {
+  transform: translate(-15px, -5px);
+}
+
+.flavour-img-Ybottom {
+  transform: translate(0, 10px);
+  transition: all 0.5s;
+}
+
+.flavour-img-Ybottom:hover {
+  transform: translate(5px, 10px);
+}
+
+.flavour-img-Ytop {
+  transform: translate(0, -10px);
+  transition: all 0.5s;
+}
+
+.flavour-img-Ytop:hover {
+  transform: translate(-5px, -15px);
+}
+
+.flavour-text-box {
+  background-color: #e03131;
+  border-radius: 4rem;
+  padding: 4.8rem;
+  margin: 6.4rem 0 6.4rem 0;
+}
+
+.flavour-img-box {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  position: relative;
+}
+
+.flavour-img-box::after {
+  content: "";
+  height: 6.4rem;
+  width: 6.4rem;
+  background-color: #e03131;
+  border-radius: 40px;
+  box-shadow: inset 0 0 0 16px #fff;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-20%, -50%);
+}
+
+.flavour-text {
+  font-size: 2.2rem;
+}
+
+/*  社交与文化的融合 */
+.SocialCultural-box {
+  /* background-color: #e03131; */
+  margin-top: 14rem;
+  align-content: center;
+  justify-items: center;
+}
+
+.SocialCultural-img {
+  height: 20rem;
+  border-radius: 2rem;
+}
+.SocialCultural-hot-one {
+  grid-column: 1/3;
+  height: 53rem;
+  align-self: end;
+  justify-self: end;
+}
+
+.SocialCultural-hot-two {
+  grid-row: span 3;
+  height: 77rem;
+}
+
+.SocialCultural-hot-three {
+  align-self: end;
+  justify-self: end;
+}
+
+.SocialCultural-text-box {
+  background-color: #e03131;
+  border-radius: 2rem;
+  grid-column: 1/-1;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2.4rem;
+}
+
+.SocialCultural-text {
+  font-size: 1.6rem;
+}
+
+/* 重庆火锅最出名的汤底 */
+.pricing-box {
+  background-color: #e03131;
+  border-radius: 2rem;
+  padding: 2.4rem;
+  color: #111122;
+  margin-bottom: 2.4rem;
+
+  overflow: hidden;
+}
+
+.best-hot-pot {
+  grid-template-columns: 3fr 8fr 1fr;
+  background-color: #ffe066;
+  border-radius: 2rem;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.best-hot-pot-box {
+  display: flex;
+}
+
+.best-hot-pot-img {
+  justify-self: start;
+  height: 12rem;
+  border-radius: 2rem 0 0 2rem;
+}
+
+.best-hot-pot-text {
+  font-family: "SUSE", sans-serif;
+  font-size: 1.6rem;
+}
+
+.best-hot-pot-icon {
+  justify-self: center;
+
+  color: #111122;
+  font-size: 3.6rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* 价格按钮 */
+
+.best-hot-pot-icon[name="price-icon-open"] {
+  display: block;
+}
+
+.best-hot-pot-icon[name="price-icon-close"] {
+  display: none;
+}
+
+.hidden-element .customer-evaluation {
+  display: none;
+}
+
+.hidden-element .best-hot-pot-icon[name="price-icon-open"] {
+  display: none;
+}
+
+.hidden-element .best-hot-pot-icon[name="price-icon-close"] {
+  display: block;
+}
+
+/* 用户对重庆火锅的评价 */
+.customer-evaluation {
+  background-color: #ffe066;
+  border-radius: 2rem;
+  grid-template-columns: 1.5fr 6fr 0.5fr;
+  align-items: center;
+}
+
+.customer-head-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.customer-name {
+  font-size: 1.8rem;
+}
+
+.customer-head-img {
+  height: 15rem;
+}
+
+.customer-evaluation-text {
+  font-size: 1.8rem;
+}
+
+.pricing-botton {
+  padding: 1.2rem;
+  transition: all 0.5s;
+  color: #fff;
+  background-color: #e03131;
+  box-shadow: inset 0 0 0 6px #ffe066;
+  border-radius: 0 2rem 0 2rem;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.pricing-botton:hover,
+.pricing-botton:visited {
+  background-color: #ca2c2c;
+  color: #f8f9fa;
+}
+
+.pricing-botton::after {
+  display: inline-block;
+  content: "";
+  width: 8rem;
+  height: 1rem;
+  background-color: #fff;
+
+  position: absolute;
+  top: 20px;
+  left: -20px;
+  transform: rotate(-50deg);
+}
+
+/* 页脚 */
+.footer {
+  margin-top: 8rem;
+}
+
+.contact-infomation-box {
+  padding: 3.6rem;
+  justify-items: center;
+  text-align: center;
+}
+
+.footer-contact-link {
+  display: block;
+  text-decoration: none;
+  color: #e03131;
+  font-size: 1.6rem;
+  margin-bottom: 10px;
+}
+
+.footer-contact-icon {
+  font-size: 3.6rem;
+}
+
+.footer-box {
+  background: linear-gradient(
+    to top,
+    rgba(227, 70, 70, 0.724),
+    rgb(224, 49, 49)
+  );
+  padding: 4.8rem 3.5rem 3.5rem 3.5rem;
+  border-radius: 80% 10% 0 0;
+  grid-template-columns: 1fr 2fr;
+  align-items: center;
+  justify-content: center;
+}
+
+.lion-dance-img-box img {
+  height: 44rem;
+}
+
+.blogroll-heading {
+  font-size: 2.4rem;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.blogroll-nav {
+  list-style: none;
+}
+
+.blogroll-nav li {
+  margin-bottom: 8px;
+  font-size: 1.8rem;
+}
+
+/*
+- Font sizes (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+
+- Spacing system (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+主色：#e03131
+辅色：#ffc9c9
+价格：#ffe066
+价格字体色：#111122
+*/

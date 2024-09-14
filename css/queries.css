@@ -1,0 +1,169 @@
+/* 1344px */
+@media (max-width: 84em) {
+  .main-nav-list {
+    font-size: 1.8rem;
+  }
+
+  .heading-primary {
+    font-size: 5.8rem;
+  }
+  .heading-second {
+    font-size: 4.6rem;
+  }
+}
+
+/* 1200px */
+@media (max-width: 75em) {
+  html {
+    font-size: 56.25%;
+  }
+
+  .main-nav-list {
+    font-size: 1.8rem;
+  }
+}
+
+/* 944px */
+@media (max-width: 59em) {
+  html {
+    font-size: 46%;
+    position: relative;
+  }
+
+  .hot-pot-ingredient {
+    margin-top: 9.6rem;
+  }
+
+  .btn-moblie-nav {
+    display: block;
+    position: absolute;
+    top: 4rem;
+    right: 4rem;
+  }
+
+  .main-nav {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    background-color: rgba(222, 226, 230, 0.915);
+    width: 100%;
+    height: 100%vh;
+    opacity: 0;
+    pointer-events: none;
+    visibility: hidden;
+  }
+
+  .nav-open .main-nav {
+    opacity: 1;
+    pointer-events: auto;
+    visibility: visible;
+  }
+
+  .nav-open .icon-moblie-nav[name="clouse-outline"] {
+    border: 1px solid #000;
+    color: #111122;
+    display: block;
+  }
+
+  .nav-open .icon-moblie-nav[name="menu-outline"] {
+    border: 2px solid #fff;
+    color: #fff;
+    display: none;
+  }
+
+  .main-nav-list {
+    flex-direction: column;
+  }
+
+  .main-nav-link:link,
+  .main-nav-link:visited {
+    text-align: center;
+    font-size: 3rem;
+    color: #495057;
+  }
+}
+
+/*707px */
+@media (max-width: 44em) {
+  .hero-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .flavour-box {
+    flex-direction: column;
+  }
+
+  .flavour-img-box {
+    grid-template-columns: 1fr 1fr;
+    align-self: center;
+    justify-content: center;
+  }
+
+  .flavour-img-Xleft,
+  .flavour-img-Xright,
+  .flavour-img-Ybottom,
+  .flavour-img-Ytop {
+    transform: translate(0, 0);
+  }
+
+  .SocialCultural-box {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .flavour-img-box::after {
+    content: "";
+    height: 6.4rem;
+    width: 6.4rem;
+    background-color: #e03131;
+    border-radius: 40px;
+    box-shadow: inset 0 0 0 16px #fff;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .ingredient-box {
+    flex-direction: column;
+  }
+
+  .SocialCultural-hot-two {
+    display: none;
+  }
+
+  .SocialCultural-hot-one {
+    grid-column: 1/-1;
+    justify-self: auto;
+  }
+
+  .SocialCultural-hot-three {
+    justify-self: auto;
+  }
+
+  .flavour-text-box {
+    margin: 0;
+  }
+}
+
+@media (max-width: 35em) {
+  .best-hot-pot-img {
+    height: 24rem;
+  }
+
+  .flavour-img {
+    height: 20rem;
+  }
+}
+/*
+- Font sizes (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+
+- Spacing system (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+主色：#e03131
+辅色：#ffc9c9
+价格：#ffe066
+价格字体色：#111122
+*/
